@@ -1,26 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Pages Site</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Saltpepper — Welcome</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Website</h1>
-    </header>
+  <div class="bg"></div>
 
-    <main>
-        <p>This is my first GitHub Pages website!</p>
-        <button id="clickMe">Click me</button>
-    </main>
+  <header class="site-header">
+    <button id="menuBtn" class="menu-btn" aria-label="Open menu">☰</button>
+    <nav class="nav" id="nav" aria-hidden="true">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-    <footer>
-        <p>© 2025 My Website</p>
-    </footer>
+  <main class="hero">
+    <div class="hero-inner">
+      <h1 class="title">Saltpepper</h1>
+      <p class="subtitle">Simple — bold — beautiful</p>
+      <a class="cta" href="#contact">Get in touch</a>
+    </div>
+  </main>
 
-    <script src="script.js"></script>
+  <footer class="foot" id="contact">
+    <p>© <span id="year"></span> Saltpepper</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
