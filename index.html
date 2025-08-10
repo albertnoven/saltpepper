@@ -9,8 +9,8 @@
     .hero {
       display: flex;
       justify-content: center;
-      align-items: flex-start; /* Changed from center to flex-start */
-      padding-top: 15vh; /* Pushes content down from the top by 15% of viewport height */
+      align-items: flex-start;
+      padding-top: 15vh;
       min-height: 100vh;
     }
     
@@ -21,8 +21,9 @@
     .social-links {
       margin-top: 20px;
       display: flex;
-      justify-content: center;
-      gap: 20px;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
     }
     
     .social-link {
@@ -34,6 +35,11 @@
     
     .social-link:hover {
       opacity: 0.8;
+    }
+    
+    .email-address {
+      color: white;
+      font-size: 1.1rem;
     }
   </style>
 </head>
@@ -52,7 +58,7 @@
       <h1 class="title">Salt & Pepper</h1>
       <div class="social-links">
         <a href="https://www.instagram.com/saltpepper.duo/" class="social-link" target="_blank" rel="noopener noreferrer">Instagram</a>
-        <a href="mailto:contact.saltpepperduo@gmail.com" class="social-link">Email</a>
+        <div class="email-address">contact.saltpepperduo@gmail.com</div>
       </div>
     </div>
   </main>
