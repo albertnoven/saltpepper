@@ -5,6 +5,37 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Saltpepper — Welcome</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .hero {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start; /* Changed from center to flex-start */
+      padding-top: 15vh; /* Pushes content down from the top by 15% of viewport height */
+      min-height: 100vh;
+    }
+    
+    .hero-inner {
+      text-align: center;
+    }
+    
+    .social-links {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    
+    .social-link {
+      color: white;
+      text-decoration: none;
+      font-size: 1.2rem;
+      transition: opacity 0.3s;
+    }
+    
+    .social-link:hover {
+      opacity: 0.8;
+    }
+  </style>
 </head>
 <body>
   <div class="bg"></div>
@@ -12,14 +43,17 @@
   <header class="site-header">
     <button id="menuBtn" class="menu-btn" aria-label="Open menu">☰</button>
     <nav class="nav" id="nav" aria-hidden="true">
-      <a href="https://www.instagram.com/saltpepper.duo/" class="nav-link" target="_blank" rel="noopener noreferrer">Instagram</a>
-      <a href="mailto:contact.saltpepperduo@gmail.com" class="nav-link">Email Us</a>
+      <!-- Navigation items can go here if needed -->
     </nav>
   </header>
 
   <main class="hero">
     <div class="hero-inner">
       <h1 class="title">Salt & Pepper</h1>
+      <div class="social-links">
+        <a href="https://www.instagram.com/saltpepper.duo/" class="social-link" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="mailto:contact.saltpepperduo@gmail.com" class="social-link">Email</a>
+      </div>
     </div>
   </main>
 
